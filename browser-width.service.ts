@@ -12,7 +12,7 @@ export class BrowserWidthService {
             .subscribe(windowSize$);
     }
 
-    getWidth(): number {
-       return window.innerWidth;
+    getWidth(): Observable<string> {
+       return this.width;
     }
 }
