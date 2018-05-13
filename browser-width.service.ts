@@ -12,13 +12,7 @@ export class BrowserWidthService {
             .subscribe(windowSize$);
     }
 
-    getDisplayMode() {
-        let a;
-        if (window.innerWidth < 415) { a = 'phone'; }
-        if (window.innerWidth > 414 && window.innerWidth < 1025) { a = 'tablet'; }
-        if (window.innerWidth > 1024) { a = 'desktop'; }
-        return {
-            width: a
-        };
+    getDisplayMode(): number {
+       return window.innerWidth;
     }
 }
