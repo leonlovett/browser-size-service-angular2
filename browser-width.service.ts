@@ -12,7 +12,7 @@ export class BrowserWidthService {
             .subscribe(windowSize$);
     }
 
-    getDisplayMode(): number {
+    getWidth(): number {
        return window.innerWidth;
     }
 }
